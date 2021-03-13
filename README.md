@@ -10,8 +10,9 @@ language will be at column 1.
 You have to also pass a Stream when creating the Localization object.
 
 ## Example
+```csharp
     using var _stream = File.Open(AssetDatabase.GetAssetPath(localizationText),
                                   FileMode.Open, FileAccess.Read);
     Localization = new Localization.Localization((int) language, _stream);
-
+```
 ### A more detailed documentation will be written soon.
